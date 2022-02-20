@@ -1,0 +1,98 @@
+<div class="l-toolbar-container">
+  <div class="l-toolbar-logo-container">
+    <img class="l-toolbar-logo" src="../../assets/img/gym-logo.jpg">
+  </div>
+</div>
+<div class="container">
+    <div class="l-register-title">
+        <span class="l-register-title-text"> Vino alături de noi! </span>
+        <span class="l-register-subtitle-text"> Fă acum primul pas pentru un stil de viață mai sănătos.  </span>
+    </div>
+    <div class="l-register-card-container">
+      <div class="l-register-card">
+
+        <div class="l-register-input">
+          <kendo-floatinglabel class="l-register-input-floating" text="Prenume*">
+            <kendo-textbox class="l-register-input-text" [(ngModel)]="userRegistration.firstName"
+            ></kendo-textbox>
+          </kendo-floatinglabel>
+        </div>
+
+        <div class="l-register-input">
+          <kendo-floatinglabel class="l-register-input-floating" text="Nume*">
+            <kendo-textbox class="l-register-input-text" [(ngModel)]="userRegistration.lastName"
+            ></kendo-textbox>
+          </kendo-floatinglabel>
+        </div>
+
+        <div class="l-register-input">
+          <kendo-floatinglabel class="l-register-input-floating" text="Email*">
+            <kendo-textbox class="l-register-input-text" [(ngModel)]="userRegistration.email"
+            ></kendo-textbox>
+          </kendo-floatinglabel>
+        </div>
+
+        <div class="l-register-input">
+          <kendo-floatinglabel class="l-register-input-floating" text="Telefon*">
+            <kendo-textbox class="l-register-input-text" [(ngModel)]="userRegistration.phoneNumber"
+            ></kendo-textbox>
+          </kendo-floatinglabel>
+        </div>
+        
+        
+
+        <div class="l-register-checkbox-section">
+
+          <div class="l-register-checkbox">
+            <input type="checkbox" kendoCheckBox [(ngModel)]="userRegistration.acceptedTerms" />
+            <span class="checkbox-text">
+              Sunt de acord cu
+            </span>
+            <span class="checkbox-text-underline"> 
+              Termenii și condițiile de utilizare ai site-ului pumpgym.ro
+            </span>
+          </div>
+
+          <div class="l-register-checkbox">
+            <input type="checkbox" kendoCheckBox [(ngModel)]="userRegistration.newsletterSubscription" />
+            <span class="checkbox-text">
+              Sunt de acord să primesc newsletter pe email
+            </span>
+          </div>
+        </div>
+
+        <div class="l-register-actions-section">
+          <button class="l-register-button" (click)="register()">
+            Creează cont
+          </button>
+  
+          <div class="l-register-already" (click)="goToLoginPage()">
+            Am deja cont
+          </div>
+        </div>
+        
+        <div class="l-register-footer">
+          <div class="l-register-footer-actions">
+            <span class="l-register-footer-action" (click)="goToHelp()"> Ajutor </span>
+            <span class="l-register-footer-action" (click)="goToPrivacy()">  Confidențialitate </span>
+            <span class="l-register-footer-action" (click)="goToTerms()"> Termeni </span>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+
+    <div class="l-register-footerpage">
+      <div class="l-register-footerpage-stores">
+        <img class="l-footer-store-icon" src="../../assets/img/google-icon.png">
+        <img class="l-footer-store-icon" src="../../assets/img/apple-icon.svg">
+      </div>
+      <div class="follow-us-text">
+        Urmărește-ne și pe 
+        <img class="l-footer-linked-icon" src="../../assets/img/linkedin.png">
+      </div>
+      <div class="copyright">
+        Copyright @ 2022 - Disertație SCG - Toate drepturile rezervate
+      </div>
+    </div>
+</div>
